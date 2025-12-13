@@ -1,0 +1,26 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+
+# VS Code / Visual Studio
+.vscode/
+.vs/
+*.user
+*.suo
+
+# PowerShell
+*.ps1xml
+*.clixml
+
+# Logs
+*.log
+logs/
+output/
+
+# Win32 packaging artifacts (Intune)
+*.intunewin
+
+# Temporary / backups
+*.tmp
+*.bak
+*~
