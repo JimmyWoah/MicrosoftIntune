@@ -16,7 +16,7 @@ I created this repo as a single place to keep:
 
 ---
 
-## Struttura del repository
+## Repository structure
 
 ```Structure
 MicrosoftIntune/
@@ -49,25 +49,27 @@ MicrosoftIntune/
 
 ---
 
-### ✅ Convenzioni
-- Ogni remediation dovrebbe includere **Detect.ps1** e **Remediate.ps1**
-- Ogni cartella contenuto ha un **README.md** con:
-  - scopo
-  - prerequisiti
-  - come usare in Intune
-  - note / rollback / limiti
-- Dove possibile: logging chiaro e idempotenza (rieseguibile senza effetti collaterali)
+### ✅ Conventions
+- Each remediation should include **Detect.ps1** and **Remediate.ps1**
+- Each remediation should include a **README.md** with:
+  - purpose
+  - prerequisites
+  - how to use it in Intune
+  - notes/rollback/limitations
+- Whenever possible: clear logging and idempotent behavior (safe to run multiple times)
 
-### ⚠️ Avvertenze
-- **Usa questi script a tuo rischio.**
-- Testa sempre su gruppo pilota / lab prima della produzione.
-- Verifica contesto di esecuzione (SYSTEM vs utente), permessi, impatti (riavvii, uninstall, registro, servizi).
-- Alcuni script possono essere distruttivi: leggi sempre l’header.
+### ⚠️ Warnings
+**Use these scripts at your own risk.**
 
-### 🤝 Contributi
-Issue e Pull Request benvenute (fix, miglioramenti, nuove remediation/detection, documentazione).
+- Always test in a lab/tenant or pilot group before production.
+- Double-check execution context (SYSTEM vs user), permissions, and impact (reboots, uninstall, registry/service changes).
+- Some scripts may be destructive. Always read the script header first.
 
-### 📜 Licenza
-Vedi file `LICENSE`.
+
+### 🤝 Contributing
+Issues and Pull Requests are welcome (fixes, improvements, new remediations/detections, documentation).
+
+### 📜 License
+See `LICENSE` file.
 
 ---
