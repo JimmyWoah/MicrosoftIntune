@@ -1,6 +1,4 @@
 # MicrosoftIntune
+### Practical scripts for Microsoft Intune
 
-## Practical scripts for Microsoft Intune
-
-::before
-::after
+---
