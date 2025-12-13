@@ -1,5 +1,5 @@
 # MicrosoftIntune
-### Practical scripts for Microsoft Intune
+### Practical scripts for Microsoft Intune (Microsoft Endpoint Manager)
 
 ---
 
@@ -13,11 +13,13 @@ I created this repo as a single place to keep:
 - operational notes and mini-guides to avoid reinventing the wheel
 
 > This is not an official Microsoft repository.
+
 ---
 
 ## Struttura del repository
 
-`MicrosoftIntune/
+`Structure
+MicrosoftIntune/
 ├─ scripts/
 │  ├─ 00-Devices/
 │  │  └─ Remediations/
@@ -43,6 +45,7 @@ I created this repo as a single place to keep:
 ├─ .gitignore
 ├─ LICENSE
 └─ README.md`
+`Structure
 
 ---
 
