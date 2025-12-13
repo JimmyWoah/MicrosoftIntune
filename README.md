@@ -17,7 +17,7 @@ I created this repo as a single place to keep:
 
 ## Struttura del repository
 
-MicrosoftIntune/
+`MicrosoftIntune/
 ├─ scripts/
 │  ├─ 00-Devices/
 │  │  └─ Remediations/
@@ -42,7 +42,7 @@ MicrosoftIntune/
 ├─ .gitattributes
 ├─ .gitignore
 ├─ LICENSE
-└─ README.md
+└─ README.md`
 
 ---
 
