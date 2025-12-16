@@ -123,15 +123,16 @@ Main guardrails:
 ## Intune setup (Proactive Remediations)
 
 1) Intune admin center  
-   `Reports` → `Endpoint analytics` → `Proactive remediations` → `Create script package`
+   `Devices` → `Scripts and remediations` → `Create` → `Create script package`
 
 2) Upload:
-   - Detection: `detection.ps1`
-   - Remediation: `remediation.ps1`
+   - Detection: `SecureBootCerts_Detect.ps1`
+   - Remediation: `SecureBootCerts_Remediate.ps1`
 
 3) Recommended options:
    - **Run this script using the logged-on credentials**: `No`
    - **Run script in 64-bit PowerShell**: `Yes`
+   - **Enforce script signature check**: `No`
    - Schedule: at least daily (tune based on your maintenance/reboot strategy)
 
 4) Assign to a pilot group first, then expand.
@@ -153,7 +154,7 @@ Main guardrails:
 
 ### “Get-SecureBootUEFI failed”
 Possible causes:
-- Device not in UEFI / Secure Boot not available
+- Device not in UEFI/Secure Boot not available
 - Cmdlet not accessible in the current context (verify SYSTEM + 64-bit execution)
 
 ### `UEFICA2023Error` is non-zero
@@ -179,10 +180,6 @@ On the client:
   https://support.microsoft.com/en-us/topic/registry-key-updates-for-secure-boot-windows-devices-with-it-managed-updates-a7be69c9-4634-42e1-9ca1-df06f43f360d
 
 - Secure Boot db/dbx variable update events (events and troubleshooting)  
-  https://support.microsoft.com/it-it/topic/eventi-di-aggiornamento-delle-variabili-db-e-dbx-di-avvio-protetto-37e47cf8-608b-4a87-8175-bdead630eb69
+  https://support.microsoft.com/en-us/topic/secure-boot-db-and-dbx-variable-update-events-37e47cf8-608b-4a87-8175-bdead630eb69
 
 ---
-
-## License
-
-Choose your preferred license (e.g., MIT). Remove this section if the repo is internal-only.
