@@ -12,11 +12,11 @@ $TaskName        = 'Secure-Boot-Update'
 
 function Get-UEFICA2023Present {
     try {
-        # Your same technique: look for "Windows UEFI CA 2023" in UEFI db
+        # Look for "Windows UEFI CA 2023" in UEFI db
         $db = Get-SecureBootUEFI db
         return ([System.Text.Encoding]::ASCII.GetString($db.Bytes) -match 'Windows UEFI CA 2023')
     } catch {
-        # If Secure Boot / UEFI cmdlets not available, don't hard-fail the remediation
+        # If Secure Boot/UEFI cmdlets not available, don't hard-fail the remediation
         Write-Output "WARN: Get-SecureBootUEFI failed ($($_.Exception.Message))."
         return $false
     }
