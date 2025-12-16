@@ -143,11 +143,14 @@ Main guardrails:
 ## How to interpret Intune status
 
 - **Detection status: With issues** + output `Reboot required (0x4100)`  
-  Means: rollout has progressed to the reboot-required stage; device must reboot.
+  Means: rollout has progressed to the reboot-required stage and device must reboot.
 
 - **Remediation status: Recurred** while still at `0x4100`  
   Means: the device keeps being detected as non-compliant at each run (because reboot hasn’t happened yet).  
   Remediation may still run, but it should be a **no-op** (by design).
+
+  - **Detection status: Without issues**   
+  Means: rollout has completed, and you'll see `Compliant: UEFICA2023Status=Updated (AvailableUpdates=0x4000)`
 
 ---
 
