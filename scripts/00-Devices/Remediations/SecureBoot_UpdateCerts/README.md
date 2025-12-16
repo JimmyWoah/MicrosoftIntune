@@ -2,7 +2,8 @@
 
 This repo contains a pair of PowerShell scripts (Detection + Remediation) to manage, via **Intune Proactive Remediations**, the Secure Boot certificate/key updates related to **Windows UEFI CA 2023** using the registry trigger `AvailableUpdates=0x5944`.
 
-Additionally, the Detection script is intentionally **strict** about one stage: if the device is **reboot pending** (`AvailableUpdates=0x4100`), it stays **Non-Compliant** until the reboot is completed.
+Additionally, the Detection script is intentionally **strict** about one stage.
+If the device is **reboot pending** (`AvailableUpdates=0x4100`), it stays **Non-Compliant** until the reboot is completed.
 
 ---
 
