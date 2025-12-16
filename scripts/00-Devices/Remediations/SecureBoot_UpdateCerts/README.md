@@ -32,7 +32,7 @@ If the device is **reboot pending** (`AvailableUpdates=0x4100`), it stays **Non-
   - `HKLM\SYSTEM\CurrentControlSet\Control\SecureBoot`
     - `AvailableUpdates` (REG_DWORD)
 
-- Status / error:
+- Status/error:
   - `HKLM\SYSTEM\CurrentControlSet\Control\SecureBoot\Servicing`
     - `UEFICA2023Status` (REG_SZ)
     - `UEFICA2023Error` (REG_DWORD)
