@@ -149,7 +149,7 @@ Main guardrails:
   Means: the device keeps being detected as non-compliant at each run (because reboot hasn’t happened yet).  
   Remediation may still run, but it should be a **no-op** (by design).
 
-  - **Detection status: Without issues**   
+- **Detection status: Without issues**   
   Means: rollout has completed, and you'll see `Compliant: UEFICA2023Status=Updated (AvailableUpdates=0x4000)`
 
 ---
